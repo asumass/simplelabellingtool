@@ -1,0 +1,27 @@
+{
+  "name": "simplejsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify app.js -p esmify > bundle.js",
+    "start": "node server.js",
+    "bstart": "browserify app.js -p esmify > bundle.js & node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "file-saver": "^2.0.5",
+    "geoblaze": "^1.2.0",
+    "georaster-layer-for-leaflet": "^3.10.0",
+    "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4",
+    "lodash": "^4.17.21",
+    "pubsub-js": "^1.9.4"
+  },
+  "devDependencies": {
+    "esmify": "^2.1.1"
+  }
+}
