@@ -21,12 +21,21 @@
         #mapContainer {
             height: 100vh;
             margin-left: 200px;
+            border-width: 20px;
         }
-        #map1, #map2 {
-            width: 50%;
+        #map1 {
+            width: 48%;
             top:10%;
             height: 80%;
             float: left;
+            border-width: 20px;
+        }
+        #map2{
+            width: 48%;
+            top:10%;
+            height: 80%;
+            float: right;
+            border-width: 20px;
         }
     </style>
 </head>
@@ -35,7 +44,7 @@
         <h5>Import Pre TIFF</h5>
         <input  type="file" id="import1"></input><br><br> 
 
-        <h5>Import Post Predicted TIFF</h5>
+        <h5>Import Post TIFF</h5>
         <input  type="file" id="import2"></input><br><br> 
         <br><br>    
         <button  id="drawBbox">Draw BBox</button><br><br> 
